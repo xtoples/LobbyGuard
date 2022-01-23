@@ -1,0 +1,5 @@
+name: ${project.name}
+main: ${project.groupId}.lobbyguard.LobbyGuard
+version: ${project.version}
+authors: ["Toples"]
+softdepend: [PlaceholderAPI]

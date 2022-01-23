@@ -1,0 +1,39 @@
+message-listeners:
+  pickup-manager:
+    enabled: true
+    message: "&cAction pick up items denied"
+  drop-manager:
+    enabled: true
+    message: "&cAction drop items denied"
+  achievement-manager:
+    enabled: true
+    message: "&cAchievement messages are disabled"
+  itemdamage-manager:
+    enabled: true
+    message: "&cPvP mode disabled"
+  shear-manager:
+    enabled: true
+    message: "&cEntity shaving is disabled"
+  fish-manager:
+    enabled: true
+    message: "&cFishing for aquatic animals is disabled"
+  interact-manager:
+    enabled: true
+    message: "Interaction disabled"
+  portal-manager:
+    enabled: true
+    message: "Portal interaction is disabled"
+  # Block
+  place-manager:
+    enabled: true
+    message: "Block place disabled"
+  break-manager:
+    enabled: true
+    message: "Block break disabled"
+disabled-listeners:
+  - PlayerInteractEntityEvent
+  - PlayerInteractEvent-Right-Air
+  - PlayerInteractEvent-Left-Air
+  - PlayerInteractEvent-Physical
+enabled-worlds:
+  - all
