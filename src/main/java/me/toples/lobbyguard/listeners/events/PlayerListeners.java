@@ -15,7 +15,7 @@ public class PlayerListeners implements Listener {
     public void onPickup(PlayerPickupItemEvent event) {
         Player player = event.getPlayer();
         if (plugin.getConfig().getBoolean("message-listeners.pickup-manager.enabled")) {
-            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.pickup-message.message")));
+            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.pickup-manager.message")));
         } else {
             player.sendMessage("");
         }
@@ -30,7 +30,7 @@ public class PlayerListeners implements Listener {
     public void onDrop(PlayerDropItemEvent event) {
         Player player = event.getPlayer();
         if (plugin.getConfig().getBoolean("message-listeners.drop-manager.enabled")) {
-            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.drop-message.message")));
+            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.drop-manager.message")));
         } else {
             player.sendMessage("");
         }
@@ -45,7 +45,7 @@ public class PlayerListeners implements Listener {
     public void onAchievement(PlayerAchievementAwardedEvent event) {
         Player player = event.getPlayer();
         if (plugin.getConfig().getBoolean("message-listeners.achievement-manager.enabled")) {
-            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.achievement-message.message")));
+            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.achievement-manager.message")));
         } else {
             player.sendMessage("");
         }
@@ -60,7 +60,7 @@ public class PlayerListeners implements Listener {
     public void onItemDamage(PlayerItemDamageEvent event) {
         Player player = event.getPlayer();
         if (plugin.getConfig().getBoolean("message-listeners.itemdamage-manager.enabled")) {
-            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.itemdamage-message.message")));
+            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.itemdamage-manager.message")));
         } else {
             player.sendMessage("");
         }
@@ -75,7 +75,7 @@ public class PlayerListeners implements Listener {
     public void onShear(PlayerShearEntityEvent event) {
         Player player = event.getPlayer();
         if (plugin.getConfig().getBoolean("message-listeners.shear-manager.enabled")) {
-            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.shear-message.message")));
+            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.shear-manager.message")));
         } else {
             player.sendMessage("");
         }
@@ -90,7 +90,7 @@ public class PlayerListeners implements Listener {
     public void onFish(PlayerFishEvent event) { //
         Player player = event.getPlayer();
         if (plugin.getConfig().getBoolean("message-listeners.fish-manager.enabled")) {
-            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.fish-message.message")));
+            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.fish-manager.message")));
         } else {
             player.sendMessage("");
         }
@@ -105,7 +105,7 @@ public class PlayerListeners implements Listener {
     public void onInteract(PlayerInteractEvent event) {
         Player player = event.getPlayer();
         if (plugin.getConfig().getBoolean("message-listeners.interact-manager.enabled")) {
-            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.interact-message.message")));
+            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.interact-manager.message")));
         } else {
             player.sendMessage("");
         }
@@ -122,7 +122,7 @@ public class PlayerListeners implements Listener {
     public void onPortal(PlayerPortalEvent event) {
         Player player = event.getPlayer();
         if (plugin.getConfig().getBoolean("message-listeners.portal-manager.enabled")) {
-            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.portal-message.message")));
+            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.portal-manager.message")));
         } else {
             player.sendMessage("");
         }

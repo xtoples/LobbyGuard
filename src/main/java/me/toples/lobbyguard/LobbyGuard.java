@@ -6,6 +6,7 @@ import me.toples.lobbyguard.api.impl.Expansion;
 import me.toples.lobbyguard.commands.LobbyGuardCMD;
 import me.toples.lobbyguard.listeners.ListenerManager;
 import me.toples.lobbyguard.listeners.events.BlockListeners;
+import me.toples.lobbyguard.listeners.events.CommandListeners;
 import me.toples.lobbyguard.listeners.events.PlayerListeners;
 import me.toples.lobbyguard.utilities.Description;
 import org.bukkit.Bukkit;
@@ -59,6 +60,7 @@ public class LobbyGuard extends JavaPlugin {
         new LobbyGuardCMD(this);
         pluginManager.registerEvents(new PlayerListeners(),this);
         pluginManager.registerEvents(new BlockListeners(),this);
+        pluginManager.registerEvents(new CommandListeners(), this);
         registerConfig();
     }
     @Override

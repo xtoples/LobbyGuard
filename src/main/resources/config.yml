@@ -30,6 +30,9 @@ message-listeners:
   break-manager:
     enabled: true
     message: "Block break disabled"
+  # Health
+  food-manager:
+    enabled: true
 disabled-listeners:
   - PlayerInteractEntityEvent
   - PlayerInteractEvent-Right-Air

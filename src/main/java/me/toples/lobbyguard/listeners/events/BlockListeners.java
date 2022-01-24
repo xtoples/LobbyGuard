@@ -19,7 +19,7 @@ public class BlockListeners implements Listener {
     public void onPlace(BlockPlaceEvent event) {
         Player player = event.getPlayer();
         if (plugin.getConfig().getBoolean("message-listeners.place-manager.enabled")) {
-            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.place-message.message")));
+            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.place-manager.message")));
         } else {
             player.sendMessage("");
         }
@@ -35,7 +35,7 @@ public class BlockListeners implements Listener {
     public void onBreak(BlockBreakEvent event) {
         Player player = event.getPlayer();
         if (plugin.getConfig().getBoolean("message-listeners.break-manager.enabled")) {
-            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.break-message.message")));
+            player.sendMessage(plugin.getConfig().getString(CC.translate("message-listeners.break-manager.message")));
         } else {
             player.sendMessage("");
         }
